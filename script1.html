@@ -1,0 +1,47 @@
+<html>
+<head><!--head start here --><TITLE>My loop Example</TITLE><!--type here -->
+<style><!--style start here -->
+table {
+border-collapse: collapse;
+width: 60%;
+}
+
+th, td {
+text-align: left;
+padding: 7px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+background-color: #4CAF50;
+color: yellow;
+}
+</style><!--style end here -->
+</head><!--head end here -->
+<body><!--start body -->
+<?php
+$Singer = array("Whitney", "James", "Becky");//course array
+$Band = array("4", "4", "4");//credit array
+$Dj = array("John", "Mike", "Nichole");//professor array here
+echo '<input type="image" src="img.jpg" alt="Submit">';//image selection here
+echo '<table><tr><tr><th>Music.No</th><th>Singer</th><th>Dj</th><th>Band</th></tr>';//output display
+for($i=0;$i<count($singer);$i++)//for loop here
+{
+//switch case example
+switch ($i) {
+case 0:
+echo "<tr><td>1</td><td>" . $singer[$i] . "</td><td>" . $DJ[$i] . "</td><td>" . $Band[$i] . "</td></tr>";//output display here in table
+break;
+case 1:
+echo "<tr><td>2</td><td>" . $Singer[$i] . "</td><td>" . $Dj[$i] . "</td><td>" . $Band[$i] . "</td></tr>";//output display here in table
+break;
+case 2:
+echo "<tr><td>3</td><td>" . $Singer[$i] . "</td><td>" . $Dj[$i] . "</td><td>" . $Band[$i] . "</td></tr>";//output display here in table
+break;
+}
+}
+?>
+
+</body><!--end body -->
+</html>
